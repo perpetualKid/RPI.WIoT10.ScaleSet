@@ -130,8 +130,18 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.2.2</Version>
+      <Version>5.3.3</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RPI.WIoT10.MeArm\RPI.WIoT10.FEZUtility\RPI.WIoT10.FEZUtility.csproj">
+      <Project>{8A4EE553-EDA0-4527-B2F9-8E31F3EC100E}</Project>
+      <Name>RPI.WIoT10.FEZUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UWP.Devices\Devices.Hardware\Devices.Hardware.csproj">
+      <Project>{9E055181-2CC7-4D82-8081-65EB99B6EEE9}</Project>
+      <Name>Devices.Hardware</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0' ">
     <VisualStudioVersion>15.0</VisualStudioVersion>
